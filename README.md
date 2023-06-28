@@ -21,7 +21,7 @@ To install and run the web app project on your local machine, please follow thes
 
 1. Clone the project repository from GitHub using the following command:
    ```
-   git clone https://github.com/UAdelaide/23S1_WDC_UG130_SP.git
+   git clone 
    ```
 
 2. Navigate to the project directory:
