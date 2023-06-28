@@ -1,0 +1,36 @@
+/* Footer */
+footer {
+	display: flex;
+	justify-content: center;
+	align-items:last baseline;
+	background-color:rgba(252, 163, 17, 0.75);
+	color: black;
+	padding: 10px;
+	bottom: 10px;
+	width: 100%;
+}
+
+footer .logo {
+	font-size: 24px;
+	font-weight: bold;
+	margin-right: 100px;
+}
+
+footer .logo img{
+	width: 100px;
+	height: auto;
+}
+
+footer .contact {
+	font-size: 16px;
+	margin-left: 100px;
+	text-align: right;
+
+}
+
+#copyright{
+	font-size: medium;
+	text-align: center;
+	font-size: 12px;
+	color: black;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign-up</title>
+
+    <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/footer.css">
+    <link rel="stylesheet" href="stylesheets/login.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="javascripts/login.js"></script>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/black-logo.png" alt="mySET logo"></a>
+        </div>
+
+        <div class="login">
+			<button type="button" class="login-btn" id="login-btn" onclick="navigateToHomePage()">HOME</button>
+		</div>
+
+        <div class="nav-bar" onclick="navigateToHomePage()">
+            <!-- <a href="index.html">HOME</a>
+            <a href="all-clubs.html">CLUBS</a>
+            <a href="imp-updates.html">UPDATES</a>
+            <a href="contact.html">CONTACT</a> -->
+        </div>
+
+    </header>
+
+    <!-- Login Screen -->
+    <div class="login-screen">
+        <h2>SIGN UP</h2>
+        <p>Become A Member!</p>
+        <form id="signup-form" onsubmit="signup(event);">
+            <label for="username">USERNAME:</label>
+            <input type="text" id="signup-user" name="username" required><br>
+            <label for="firstname">FIRST NAME:</label>
+            <input type="text" id="signup-firstname" name="firstname" required><br>
+            <label for="lastname">LAST NAME:</label>
+            <input type="text" id="signup-lastname" name="lastname" required><br>
+            <label for="username">EMAIL:</label>
+            <input type="text" id="signup-email" name="email" required><br>
+            <label for="password">PASSWORD:</label>
+            <input type="password" id="signup-pass" name="password" required><br>
+            <label for="password">CONFIRM PASSWORD:</label>
+            <input type="password" id="signup-confirm" name="password" required><br>
+            <input type="submit" value="Sign Up">
+        </form>
+        <br>
+        <p>OR</p>
+        <button type="button" onclick="navigateToLoginPage()">Login</button><br><br>
+
+    </div>
+
+
+
+ 	<!-- Footer -->
+     <footer>
+		<div class="logo">
+			<img onclick="navigateToUniPage()"  src="images/UoA.jpg" alt="Header Image">
+		</div>
+        <div class="copyright">
+		    <p id="copyright">&copy; 2023 mySET clubs & societies. All rights reserved.</p>
+        </div>
+		<div class="contact">
+			<strong>Contact: AskSET</strong><br>
+			askset@adelaide.edu.au<br>
+			<strong>Open hours</strong><br>
+			10 am to 4 pm, Mon to Fri<br>
+			<strong>Location</strong>
+			Level 1, Ingkarni Wardli Building
+		</div>
+
+    </footer>
+
+	<script src="javascripts/script.js">
+	</script>
+
+
+</body>
+
+</html>

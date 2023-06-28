@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UPDATES</title>
+
+    <link rel="stylesheet" href="stylesheets/style-website.css"/>
+	<link rel="stylesheet" href="stylesheets/header.css"/>
+	<link rel="stylesheet" href="stylesheets/footer.css"/>
+    <link rel="stylesheet" href="stylesheets/updates.css"/>
+    <script src="javascripts/updates.js"></script>
+    <!-- REMOVE FILE SOON: <link rel="stylesheet" href="stylesheets/style.css"/> -->
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+           <a href="index.html"><img src="images/black-logo.png" alt="mySET logo"></a>
+       </div>
+		<div class="nav-bar">
+            <!-- <a href="index.html">HOME</a>
+            <a href="all-clubs.html">CLUBS</a>
+            <a href="events.html">EVENTS</a>
+            <a href="updates.html">UPDATES</a>
+            <a href="contact.html">CONTACT</a> -->
+      </div>
+       <div class="login">
+           <!-- <button type="button" class="login-btn">Login/Sign Up</button> -->
+           <button type="button" class="login-btn" id="login-btn" onclick="navigateToLoginPage()">Login/Sign Up</button>
+       </div>
+   </header>
+
+    <!-- Background image section -->
+    <div class="bg-img">
+		<p class="text_upon_img" id="page-specific-title-style">
+			<span id="page-name">UPDATES</span>
+		</p>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-div">
+        Where you are at:
+        <a href="index.html" class = "breadcrumb"> Home</a> / Updates
+    </div>
+
+    <!-- Navigation column -->
+    <nav class="nav-column">
+        <button type="button" class="side" onclick="navigateToHomePage()">HOME</button>
+        <button type="button" class="side" onclick="navigateToAllclubsPage()">CLUBS</button>
+        <button type="button" class="side" onclick="navigateToEventsPage()">EVENTS</button>
+        <button type="button" class="side" onclick="navigateToUpdatesPage()"
+        style="background-color:#FCA311; color:black; ">
+            <strong>UPDATES</strong>
+        </button>
+        <button type="button" class="side" onclick="navigateToLoginPage()">LOGIN</button>
+        <button type="button" class="side" onclick="navigateToContactPage()">CONTACT</button>
+        <!-- <button type="button" class="side">JOIN A CLUB</button>
+        <button type="button" class="side">MY PROFILE</button> -->
+    </nav>
+
+    <!-- Updates Column -->
+    <div class="container">
+    <div class="column">
+        <h2>Important Updates</h2>
+        <div class="update_widget">
+            <div class="club-widget">Club Logo</div>
+            <p class="title-widget">Robogals' Rural Trip</p>
+            <p>
+                📣 Rural Trip Applications Now Open 📣
+                Do you have some free time during the mid-year break? Are you interested in a free trip to the Wallaroo? Are you passionate about inspiring school students with STEM?
+                Robogals Adelaide is running our annual rural trip, and are looking for volunteers to attend! We will be visiting schools in the Wallaroo region, and delivering Robogals workshops to school children in regional areas.
+                This rural trip will take place from the 2nd-6th July. Workshops will run during the school day (9am-3pm), with free time for volunteers after this.
+                We are looking for passionate and enthusiastic volunteers to apply for this opportunity, and welcome applications from any degree! Applications close Friday 26th of May at midnight.
+            </p>
+        </div>
+        <div class="update_widget">
+            <div class="club-widget">Club Logo</div>
+            <p class="title-widget">Robogals' Rural Trip</p>
+            <p>
+                📣 Rural Trip Applications Now Open 📣
+                Do you have some free time during the mid-year break? Are you interested in a free trip to the Wallaroo? Are you passionate about inspiring school students with STEM?
+                Robogals Adelaide is running our annual rural trip, and are looking for volunteers to attend! We will be visiting schools in the Wallaroo region, and delivering Robogals workshops to school children in regional areas.
+                This rural trip will take place from the 2nd-6th July. Workshops will run during the school day (9am-3pm), with free time for volunteers after this.
+                We are looking for passionate and enthusiastic volunteers to apply for this opportunity, and welcome applications from any degree! Applications close Friday 26th of May at midnight.
+            </p>
+        </div>
+    </div>
+    </div>
+
+ 	<!-- Footer -->
+     <footer>
+		<div class="logo">
+			<img onclick="navigateToUniPage()"  src="images/UoA.jpg" alt="Header Image">
+		</div>
+        <div class="copyright">
+		    <p id="copyright">&copy; 2023 mySET clubs & societies. All rights reserved.</p>
+        </div>
+		<div class="contact">
+			<strong>Contact: AskSET</strong><br>
+			askset@adelaide.edu.au<br>
+			<strong>Open hours</strong><br>
+			10 am to 4 pm, Mon to Fri<br>
+			<strong>Location</strong>
+			Level 1, Ingkarni Wardli Building
+		</div>
+
+    </footer>
+
+	<script src="javascripts/script.js">
+	</script>
+
+</body>
+
+</html>

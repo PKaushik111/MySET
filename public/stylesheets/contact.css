@@ -1,0 +1,83 @@
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.contact-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  margin: auto;
+  padding: 0;
+}
+
+.contact-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  margin: auto;
+  padding: 0;
+}
+
+
+.contact-details {
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.contact-details p {
+  font-size: 20px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+
+form {
+  width: 500px;
+  /* Increase the width of the form */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 20px;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  align-self: center;
+  /* Position the submit button at the center */
+}
+
+input[type="submit"]:hover {
+  background-color: black;
+}
+
+

@@ -1,0 +1,234 @@
+
+body {
+    margin: 0;
+}
+
+.breadcrumb-div{
+	margin: 1% 20%;
+}
+.breadcrumb {
+	text-align: center;
+	font-size: 16px;
+	color: #333;
+}
+
+/******** Background image **********/
+
+.bg-img {
+	background-image: url('../images/uni-people.jpg');
+	background-size: cover;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text_upon_img{
+	margin-top: 230px;
+	font-size: 44px;
+	text-align: center;
+	color:  #023047;
+	background-color: rgba(251, 133, 0, .80);
+	border-radius: 10px;
+	padding: 0rem 1rem;
+}
+
+#first-text {
+	font-size: 70px;
+	color: white;
+	text-align: center;
+	text-shadow: 1px 1px 2px #023047;
+}
+
+/********** Navigation Menu **********/
+
+/* .column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 32%;
+	border: 1px solid #ccc;
+	padding: 20px;
+} */
+
+.nav-column {
+	margin: 3%;
+	display: flex;
+	float: left;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 15%;
+	border: 1px solid #ccc;
+	padding-bottom: 10px;
+	background-color: #023047;
+}
+
+.nav-column button {
+	margin-top: 10px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 8px;
+	background-color: #023047;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+	width: 80%;
+}
+
+.nav-column button:hover{
+	background-color: #4ab4cf;
+	color: black;
+}
+
+/********** UPDATES *********/
+/*
+.column.updates {
+	margin-top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 20%;
+	border: 1px solid #ccc;
+	padding: 20px;
+} */
+
+
+
+
+
+
+
+
+
+/* .column.clubs {
+	display: flex;
+	flex-direction:row;
+	COMMENT justify-content: center;
+	COMMENT align-items: center;
+	COMMENT border: 1px solid #ccc;
+	COMMENT padding: 20px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: 0;
+	width: 70%;
+}
+
+.column.clubs h2 {
+	padding: 1em;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 0;
+	width: 100%;
+} */
+
+/* Club button size */
+
+/* .club {
+	width: 30%;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.club img {
+	width: 100%;
+} */
+
+
+/* Events */
+
+
+/* .column.events {
+	display: flex;
+	flex-direction:column;
+	COMMENT justify-content: center;
+	COMMENT align-items: center;
+	COMMENT border: 1px solid #ccc;
+	COMMENT padding: 20px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: 0;
+	width: 70%;
+}
+
+.column.events h2 {
+	padding: 1em;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 0;
+	width: 100%;
+} */
+
+
+/****************  AVOID MIXING CODE FOR HEADER, FOOTER, AND WEBSITE STYLE  ******************/
+/* header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px 20px;
+    margin: 0 5%;
+	background-color: #29292B;
+	color: white;
+	position: relative;
+	// added position relative for background image
+}
+
+.header {
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.logo {
+	font-size: 32px;
+	font-weight: bold;
+	display: inline-flex;
+}
+
+
+.logo img {
+	height: 70px;
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+.login-btn {
+	padding: 5px;
+	background-color: #fff;
+	color: #333;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	margin-left: auto;
+} */
+
+/* .nav {
+	display: flex;
+	padding: 5px;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.nav select {
+	margin-right: 10px;
+} */
+
+/* #header-image-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#header-image-menu img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-bottom: 10px;
+} */
+

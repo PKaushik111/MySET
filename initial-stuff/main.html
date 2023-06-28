@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>MySET</title>
+
+	<link rel="stylesheet" href="stylesheets/home.css"/>
+	<link rel="stylesheet" href="stylesheets/header.css"/>
+	<link rel="stylesheet" href="stylesheets/buttons.css"/>
+	<link rel="stylesheet" href="stylesheets/footer.css"/>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+	<script src="javascript/home.js" defer></script>
+</head>
+
+<body id="body">
+	<!-- Header -->
+	<header>
+		<div class="logo">
+			<a href="#"><img src="images/UoA.jpg" alt="UoA logo"></a>
+			<a href="#"><img src="images/mySET-logo.png" alt="mySET logo"></a>
+			<!-- <a class="header" href="/"><h1 class="header">MySET Clubs</h1></a> -->
+		</div>
+		<nav id="menu" v-if="menu==false">
+			<div class="burger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<ul >
+				<li><a href='/'>Home</a></li>
+				<li><a href='#'>About</a></li>
+				<li><a href='#'>Contact</a></li>
+			</ul>
+		</nav>
+
+		<div class="login">
+			<!-- <select>
+				<option>Home</option>
+				<option>About</option>
+				<option>Contact</option>
+			</select> -->
+			<button type="button" class="login-btn">Login/Sign Up</button>
+		</div>
+		<!-- <div id="header-image-menu">
+        <img src="header-image.jpg" alt="Header Image">
+        <h2 id="image-text">Header Image Text</h2>
+      </div> -->
+	</header>
+
+	<!-- Body -->
+	<div class="bg-img1">
+		<p><span class="top-big">Stay involved with student Clubs!!!</span>
+			<br>This is the home for all UoA SET Clubs and Societies.
+		</p>
+	</div>
+	<!-- add a horizontal rule -->
+	<hr>
+
+	<div class="btn-section">
+		<button type="button" class="home-buttons">Become A Member</button>
+		<button type="button" class="home-buttons">See All Clubs</button>
+	</div>
+	<p>
+		Find your community! Explore and have fun. <br>There are a variety of Clubs available for students to join and
+		develop their skills.
+		<br>
+		Reasons to join a Club
+		<!-- add 4 images inline -->
+	</p>
+	<div class="inline-images">
+		<img src="images/1.jpg" alt="Image 1" width="200" height="200">
+		<img src="images/2.jpg" alt="Image 2" width="200" height="200">
+		<img src="images/3.jpg" alt="Image 3" width="200" height="200">
+		<img src="images/4.jpg" alt="Image 4" width="200" height="200">
+	</div>
+	<br>
+	<hr>
+	<div class="container">
+		<div class="column">
+			<h2>Notifications</h2>
+			<p>Notification 1</p>
+			<p>Notification 2</p>
+			<p>Notification 3</p>
+		</div>
+		<div class="column">
+			<h2>Updates</h2>
+			<p>Update 1</p>
+			<p>Update 2</p>
+			<p>Update 3</p>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer>
+		<div class="logo">
+			<img src="images/UoA.jpg" alt="Header Image">
+			<div class="contact">Contact</div>
+		</div>
+	</footer>
+	<script src="script.js"></script>
+</body>
+
+</html>

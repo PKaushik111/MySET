@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login or Sign-up</title>
+
+    <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/footer.css">
+    <link rel="stylesheet" href="stylesheets/login.css">
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="javascripts/login.js"></script>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/black-logo.png" alt="mySET logo"></a>
+        </div>
+
+        <div class="login">
+            <button type="button" class="login-btn" id="login-btn" onclick="navigateToHomePage()">HOME</button>
+        </div>
+    </header>
+
+    <!-- Login Screen -->
+    <div class="login-screen">
+        <h2>Already a member?</h2>
+        <h2>Log In</h2>
+        <form id="login-form" onsubmit="login(event);">
+            <label for="username">USERNAME:</label><input type="text" id="login-user" name="username" required><br>
+            <label for="password">PASSWORD:</label><input type="password" id="login-pass" name="password" required><br>
+            <input type="submit" value="Login">
+            <label><a href="#">Forgot username?</a></label>
+            <label><a href="#">Forgot password?</a></label><br>
+        </form>
+        <p>OR Login with Google</p>
+        <!--GOOGLE OAUTH-->
+        <div style="margin: auto; width:fit-content;">
+            <div id="g_id_onload"
+                data-client_id="662332526811-njof4qvcg29cpvr4f787kjef1b22395j.apps.googleusercontent.com"
+                data-context="signin"
+                data-ux_mode="popup"
+                data-callback="do_google_login"
+                data-auto_prompt="false">
+            </div>
+
+            <div class="g_id_signin"
+                data-type="standard"
+                data-shape="rectangular"
+                data-theme="filled_black"
+                data-text="continue_with"
+                data-size="large"
+                data-logo_alignment="left">
+            </div>
+        </div>
+        <br>
+        <hr>
+        <p>Not a Member?</p>
+        <button type="button" onclick="navigateToSignupPage()">Sign Up Here</button>
+        <br><br>
+    </div>
+
+     <footer>
+		<div class="logo">
+			<img onclick="navigateToUniPage()"  src="images/UoA.jpg" alt="Header Image">
+		</div>
+        <div class="copyright">
+		    <p id="copyright">&copy; 2023 mySET clubs & societies. All rights reserved.</p>
+        </div>
+		<div class="contact">
+			<strong>Contact: AskSET</strong><br>
+			askset@adelaide.edu.au<br>
+			<strong>Open hours</strong><br>
+			10 am to 4 pm, Mon to Fri<br>
+			<strong>Location</strong>
+			Level 1, Ingkarni Wardli Building
+		</div>
+
+    </footer>
+
+	<script src="javascripts/script.js">
+	</script>
+</body>
+
+</html>

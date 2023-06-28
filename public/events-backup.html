@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UPCOMING EVENTS</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link rel="stylesheet" href="stylesheets/style-website.css" />
+    <link rel="stylesheet" href="stylesheets/header.css" />
+    <link rel="stylesheet" href="stylesheets/footer.css" />
+    <link rel="stylesheet" href="stylesheets/events.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/black-logo.png" alt="mySET logo"></a>
+        </div>
+
+
+        <div class="nav-bar">
+            <!-- <a href="index.html">HOME</a>
+            <a href="all-clubs.html">CLUBS</a>
+            <a href="events.html">EVENTS</a>
+            <a href="updates.html">UPDATES</a>
+            <a href="contact.html">CONTACT</a> -->
+
+        </div>
+
+        <div class="login">
+            <!-- <button type="button" class="login-btn">Login/Sign Up</button> -->
+            <button type="button" class="login-btn" id="login-btn" onclick="navigateToLoginPage()">Login/Sign
+                Up</button>
+        </div>
+    </header>
+
+    <!-- Background image section -->
+    <div class="bg-img">
+        <p class="text_upon_img" id="page-specific-title-style">
+            <span id="page-name">UPCOMING EVENTS</span>
+        </p>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-div">
+        Where you are at:
+        <a href="index.html" class="breadcrumb"> Home</a> / Events
+    </div>
+
+    <!-- Navigation column -->
+    <nav class="nav-column">
+
+        <button type="button" class="side" onclick="navigateToHomePage()">HOME</button>
+        <button type="button" class="side" onclick="navigateToAllclubsPage()">CLUBS</button>
+        <button type="button" class="side" onclick="navigateToEventsPage()"
+            style="background-color:#FCA311; color:black; ">
+            <strong>EVENTS</strong>
+        </button>
+        <button type="button" class="side" onclick="navigateToUpdatesPage()">UPDATES</button>
+        <button type="button" class="side" onclick="navigateToLoginPage()">LOGIN</button>
+        <button type="button" class="side" onclick="navigateToContactPage()">CONTACT</button>
+        <!-- <button type="button" class="side">JOIN A CLUB</button> -->
+        <!-- <button type="button" class="side">MY PROFILE</button> -->
+    </nav>
+
+    <!-- Events Column-->
+    <div class="container">
+        <div class="column">
+            <h2>Upcoming Events</h2>
+            <div class="event_widget">
+                <div class="date_widget">16th Jun 2023</div>
+                <p class="title-widget">WISTEMS' Quiz Night</p>
+                <p>
+                    Once upon a time 📖, on the mystical land of IW B18 ✨💫
+                    WISTEMS host their magical🧙‍♀️Quiz Night on Friday 19th May,
+                    and they humbly 😇 request the honour of your presence🧚‍♂.
+                    You and your esteemed entourage👬👭are invited to participate
+                    in a night of enchanting games 👸🫅, mystic rounds of questions🔮, and
+                    the opportunity to dress💃🧝 in your most exceptional fairytale outfits.
+                    Meals and drinks 🍕🍾🍻(both alcoholic and non) will be provided under
+                    purchase of your ticket 💰🎫. Ticket are $20 per person, and sales open
+                    9:00AM Wednesday 26th April. So set your reminders 🕰 to ensure you do not
+                    miss out!
+                </p>
+            </div>
+            <div class="event_widget">
+                <div class="date_widget">23th Jun 2023</div>
+                <p class="title-widget">Friday Night Games</p>
+                <p>
+                    Date: Every Friday<br>
+                    Time: From 5:00 PM<br>
+                    Venue: Engineering and Maths EM110 (Duck Lounge)<br>
+                    <br>
+                    Need to blow off some steam from a long week of studying? Wanna hang out with like-minded students?
+                    Want to be the final boss on Super Smash Bro's? or would just like some free food every now and
+                    then?<br>
+                    Come down to the Duck Lounge (EM110) in the Engineering and Mathematics Building for some games!<br>
+                    NOTE: Free food will be provided on the last Friday of every month.<br>
+                </p>
+            </div>
+            <div class="event_widget">
+                <div class="date_widget">16th Jun 2023</div>
+                <p class="title-widget">Meet and Greet!</p>
+                <p>
+                    Date: Friday Week 1, 2023 March 3rd <br>
+                    Time: From 5:30 PM<br>
+                    Venue: Engineering and Maths EM105<br><br>
+
+                    Come hang out and meet the Computer Science Club's committee and members in your first week of
+                    the<br>
+                    new academic year!<br>
+                    We have board games in collaboration with the GAMES Club and our club owned Nintendo Switch.<br>
+                    Food and drinks will also be provided.<br><br>
+                </p>
+            </div>
+            <div class="event_widget">
+                <div class="date_widget">25th Jun 2023</div>
+                <p class="title-widget">Git + GitHub + Gradescope Workshop</p>
+                <p>
+
+                    CS Club presents Git Gud with Git, Github and Gradescope 🔥<br>
+                    Now that the university is moving to Git, Github and Gradescope we would like to invite all our
+                    peers, first years or otherwise to this in-person and online workshop.<br>
+                    We will be covering the basics of Git and Github, what they are and how to use Gradescope alongside
+                    these tools during your courses. We will also go through how Gradescope works when using the Code50
+                    IDE.<br>
+                    We will not be covering SVN during the session as first year courses are now using Github and second
+                    years and up should already be familiar with SVN.<br>
+                    Hope to see you all there so we can Git Gud together!<br>
+                </p>
+            </div>
+            <div class="event_widget">
+                <div class="date_widget">16th Jun 2023</div>
+                <p class="title-widget">HACKED!!!!</p>
+                <p>
+                    CS Club presents HACKED! The University of Adelaide's biggest cybersecurity Q&A panel of the year!<br><br>
+
+                    Featuring industry leaders from the country's biggest cybersecurity organisations. If you're<br>
+                    interested in a career related to cybersecurity from penetration testing, incident response, to<br>
+                    governance and risk management. Our guest speakers will have a perspective that you'll want to hear.<br>
+                </p>
+            </div>
+            <div class="event_widget">
+                <div class="date_widget">16th Jun 2023</div>
+                <p class="title-widget">WISTEMS' Quiz Night</p>
+                <p>
+                    Once upon a time 📖, on the mystical land of IW B18 ✨💫
+                    WISTEMS host their magical🧙‍♀️Quiz Night on Friday 19th May,
+                    and they humbly 😇 request the honour of your presence🧚‍♂.
+                    You and your esteemed entourage👬👭are invited to participate
+                    in a night of enchanting games 👸🫅, mystic rounds of questions🔮, and
+                    the opportunity to dress💃🧝 in your most exceptional fairytale outfits.
+                    Meals and drinks 🍕🍾🍻(both alcoholic and non) will be provided under
+                    purchase of your ticket 💰🎫. Ticket are $20 per person, and sales open
+                    9:00AM Wednesday 26th April. So set your reminders 🕰 to ensure you do not
+                    miss out!
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo">
+            <img onclick="navigateToUniPage()" src="images/UoA.jpg" alt="Header Image">
+        </div>
+        <div class="copyright">
+            <p id="copyright">&copy; 2023 mySET clubs & societies. All rights reserved.</p>
+        </div>
+        <div class="contact">
+            <strong>Contact: AskSET</strong><br>
+            askset@adelaide.edu.au<br>
+            <strong>Open hours</strong><br>
+            10 am to 4 pm, Mon to Fri<br>
+            <strong>Location</strong>
+            Level 1, Ingkarni Wardli Building
+        </div>
+
+    </footer>
+
+    <script src="javascripts/script.js">
+    </script>
+
+</body>
+
+</html>

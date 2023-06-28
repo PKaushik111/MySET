@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Us - MySET</title>
+
+    <link rel="stylesheet" href="stylesheets/style-website.css" />
+    <link rel="stylesheet" href="stylesheets/home.css" />
+    <link rel="stylesheet" href="stylesheets/header.css" />
+    <link rel="stylesheet" href="stylesheets/buttons.css" />
+    <link rel="stylesheet" href="stylesheets/footer.css" />
+    <link rel="stylesheet" href="stylesheets/contact.css" />
+</head>
+
+<body id="body">
+    <div id="app">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="images/black-logo.png" alt="mySET logo"></a>
+            </div>
+
+            <div class="nav-bar">
+			  <a href="index.html">HOME</a>
+			  <a href="all-clubs.html">CLUBS</a>
+			  <a href="events.html">EVENTS</a>
+			  <a href="updates.html">UPDATES</a>
+			  <a href="contact.html">CONTACT</a>
+		</div>
+
+            <div class="login">
+                <button type="button" id="login-btn" onclick="navigateToLoginPage()" class="login-btn">Login/Sign-up</button>
+                <!-- <button type="button" class="login-btn" onclick="getLoginPage()">Login/Sign Up</button> -->
+            </div>
+        </header>
+
+        <!-- Body -->
+
+        <div class="bg-img">
+            <p class="text_upon_img">
+                <span id="first-text">Contact Us</span><br>
+            </p>
+        </div>
+        <div class="boxes">
+            <div class="contact-1">
+                <div class="contact-details">
+                    <h2>Contact Details</h2>
+                    <p>Address: L1 Ingkarni Wardli <br> University of Adelaide</p>
+                    <p>Phone: +61 234 5678</p>
+                    <p>Email: myset@adelaide.edu.au</p>
+                </div>
+                <div id="map">
+                    <iframe title="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26169.315984775374!2d138.5955328!3d-34.927411199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0ced27ef95329%3A0xb46ee5f583fae2bf!2sThe%20University%20of%20Adelaide!5e0!3m2!1sen!2sau!4v1685786070694!5m2!1sen!2sau"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+
+            <div class="contact-2">
+                <h2>Give us your Feedback</h2>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="id">Student ID:</label>
+                    <input type="text" id="id" name="id" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="logo">
+                <img onclick="navigateToUniPage()" src="images/UoA.jpg" alt="Header Image">
+            </div>
+            <div class="copyright">
+                <p id="copyright">&copy; 2023 mySET clubs & societies. All rights reserved.</p>
+            </div>
+            <div class="contact">
+                <strong>Contact: AskSET</strong><br>
+                askset@adelaide.edu.au<br>
+                <strong>Open hours</strong><br>
+                10 am to 4 pm, Mon to Fri<br>
+                <strong>Location</strong>
+                Level 1, Ingkarni Wardli Building
+            </div>
+
+        </footer>
+
+        <script src="javascripts/script.js">
+        </script>
+    </div> 
+
+
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SEE ALL CLUBS</title>
+
+    <link rel="stylesheet" href="stylesheets/style-website.css"/>
+	<link rel="stylesheet" href="stylesheets/header.css"/>
+	<link rel="stylesheet" href="stylesheets/footer.css"/>
+    <link rel="stylesheet" href="stylesheets/all-clubs.css"/>
+    <!-- <script src="javascripts/all-clubs.js"</script></script> -->
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+           <a href="index.html"><img src="images/black-logo.png" alt="mySET logo"></a>
+       </div>
+
+
+		<div class="nav-bar">
+            <!-- <a href="index.html">HOME</a>
+            <a href="all-clubs.html">CLUBS</a>
+            <a href="events.html">EVENTS</a>
+            <a href="updates.html">UPDATES</a>
+            <a href="contact.html">CONTACT</a> -->
+
+      </div>
+
+       <div class="login">
+           <!-- <button type="button" class="login-btn">Login/Sign Up</button> -->
+           <button type="button" class="login-btn" id="login-btn" onclick="navigateToLoginPage()">Login/Sign Up</button>
+       </div>
+   </header>
+
+    <!-- Background image section -->
+    <div class="bg-img">
+    <p class="text_upon_img" id="page-specific-title-style">
+        <span id="first-text" style="font-size: 3.5rem;">SEE ALL CLUBS</span>
+        <br>
+        Find your people, join a Club!
+    </p>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-div">
+        Where you are at:
+        <a href="index.html" class = "breadcrumb"> Home</a> / See All Clubs
+    </div>
+
+    <!-- Navigation column -->
+    <nav class="nav-column">
+        <button type="button" class="side" onclick="navigateToHomePage()">HOME</button>
+        <button type="button" class="side" onclick="navigateToAllclubsPage()"
+        style="background-color:#FCA311; color:black; ">
+            <strong>CLUBS</strong>
+        </button>
+        <button type="button" class="side" onclick="navigateToEventsPage()">EVENTS</button>
+        <button type="button" class="side" onclick="navigateToUpdatesPage()">UPDATES</button>
+        <button type="button" class="side" onclick="navigateToLoginPage()">LOGIN</button>
+        <button type="button" class="side" onclick="navigateToContactPage()">CONTACT</button>
+        <!-- <button type="button" class="side">JOIN A CLUB</button> -->
+        <!-- <button type="button" class="side">MY PROFILE</button> -->
+    </nav>
+
+    <br><h2>A list of all the clubs in mySET</h2>
+    <!-- <div id="grid-container"></div> -->
+    <!-- this above line of code would be used for dynamic code; but right now JS isn't working due to some eslint error.-->
+
+    <div class="grid-container">
+        <div class="item">
+            <div class="club">
+                <a href="#">
+                    <img src="images/club1.png" alt="Club 1">
+                    <h3>CS Club</h3>
+                </a>
+                <p>Adelaide University Computer Science Club</p>
+                <div class="join-button">
+                    <button type="button" class="join-club-button">JOIN CLUB</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="club">
+                <a href="#">
+                    <img src="images/club2.png" alt="Club 2">
+                    <h3>Quantum Computing Club</h3>
+                </a>
+                <p>Adelaide University Quantum Computing Club</p>
+                <div class="join-button">
+                    <button type="button" class="join-club-button">JOIN CLUB</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="club">
+                <a href="#">
+                    <img src="images/club3.png" alt="Club 3">
+                    <h3>AI & ML Club</h3>
+                </a>
+                <p>AI and ML Students Club</p>
+                <div class="join-button">
+                    <button type="button" class="join-club-button">JOIN CLUB</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="club">
+                <a href="#">
+                    <img src="images/club4.png" alt="Club 4">
+                    <h3>ABSS</h3>
+                </a>
+                <p>Adelaide Business Students' Society</p>
+                <div class="join-button">
+                    <button type="button" class="join-club-button">JOIN CLUB</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="club">
+                <a href="#">
+                    <img src="images/club5.png" alt="Club 5">
+                    <h3>Adelaide Fashion Collective</h3>
+                </a>
+                <p>Activities and Hobbies</p>
+                <div class="join-button">
+                    <button type="button" class="join-club-button">JOIN CLUB</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="club">
+                <a href="#">
+                    <img src="images/club6.png" alt="Club 6">
+                    <h3>Medical Sciences Association</h3>
+                </a>
+                <p>Adelaide Health and Medical Sciences Association</p>
+                <div class="join-button">
+                    <button type="button" class="join-club-button">JOIN CLUB</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="club">
+                <a href="#">
+                    <img src="images/club6.png" alt="Club 7">
+                    <h3>Comedy Club</h3>
+                </a>
+                <p>Adelaide University Comedy Club</p>
+                <div class="join-button">
+                    <button type="button" class="join-club-button">JOIN CLUB</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="club">
+                <a href="#">
+                    <img src="images/club6.png" alt="Club 8">
+                    <h3>Economics Club</h3>
+                </a>
+                <p>Adelaide University Economics Club</p>
+                <div class="join-button">
+                    <button type="button" class="join-club-button">JOIN CLUB</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="club">
+                <a href="#">
+                    <img src="images/club6.png" alt="Club 9">
+                    <h3>Finance Society</h3>
+                </a>
+                <p>Adelaide University Finance Society</p>
+                <div class="join-button">
+                    <button type="button" class="join-club-button">JOIN CLUB</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+	<!-- Footer -->
+    <footer>
+		<div class="logo">
+			<img onclick="navigateToUniPage()"  src="images/UoA.jpg" alt="Header Image">
+		</div>
+        <div class="copyright">
+		    <p id="copyright">&copy; 2023 mySET clubs & societies. All rights reserved.</p>
+        </div>
+		<div class="contact">
+			<strong>Contact: AskSET</strong><br>
+			askset@adelaide.edu.au<br>
+			<strong>Open hours</strong><br>
+			10 am to 4 pm, Mon to Fri<br>
+			<strong>Location</strong>
+			Level 1, Ingkarni Wardli Building
+		</div>
+
+    </footer>
+
+	<script src="javascripts/script.js">
+	</script>
+</body>
+
+</html>

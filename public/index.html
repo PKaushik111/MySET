@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<title>MySET</title>
+
+	<!-- stylesheets  -->
+	<link rel="stylesheet" href="stylesheets/style-website.css"/>
+	<link rel="stylesheet" href="stylesheets/home.css"/>
+	<link rel="stylesheet" href="stylesheets/header.css"/>
+	<link rel="stylesheet" href="stylesheets/footer.css"/>
+
+	<!-- javascript -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+	<!-- <script src="javascripts/home-vue.js" defer></script> -->
+	<!-- <script src="javascripts/home.js" defer></script> -->
+	<script src="javascripts/login.js" defer></script>
+	<script src="javascripts/script.js" defer></script>
+
+</head>
+
+<body id="body">
+	<div id="app">
+	<!-- Header -->
+	<header>
+		<div class="logo">
+			<a href="index.html"><img src="images/black-logo.png" alt="mySET logo"></a>
+		</div>
+
+		<div class="nav-bar">
+			  <a href="index.html">HOME</a>
+			  <a href="all-clubs.html">CLUBS</a>
+			  <a href="events.html" id="custom-events">EVENTS</a>
+			  <a href="updates.html">UPDATES</a>
+			  <a href="contact.html">CONTACT</a>
+		</div>
+
+		<h4 id="welcome-message" style="color:#29292B;">Welcome!</h4>
+
+		<div class="login">
+			<button type="button" id ="login-btn" class="login-btn" onclick="navigateToLoginPage();">Login/Sign-up</button>
+			<!-- <button type="button" class="login-btn" onclick="getLoginPage()">Login/Sign Up</button> -->
+		</div>
+	</header>
+
+	<!-- Body -->
+
+	<div class="bg-img">
+		<p class="text_upon_img">
+			<span id="first-text">Stay involved with student clubs!</span><br>
+			This is the home of all UoA SET Clubs and Societies.
+		</p>
+	</div>
+
+	<div class="btn-section">
+		<div class="widget">
+			<p id="text-1">Want to become a mySET member?</p>
+			<!-- <button type="button" id ="login-signup-btn" class="home-buttons">Register/Sign-up</button> -->
+			<div id="access-specific-button" >
+				<button type="button" onclick="navigateToSignupPage()">Register/Sign-up</button>
+			</div>
+		</div>
+		<div class="widget">
+			<p>Want to take a look at our clubs?</p>
+			<button type="button" onclick="navigateToAllclubsPage()">See All Clubs</button>
+		</div>
+	</div>
+
+	<div>
+		<p class="home-page-text">
+			Find your community. Explore and have fun! <br><br>
+			Challenge yourself. <br><br>
+			There are a variety of clubs and societies available for students to join and
+			develop their skills.<br>
+		</p>
+		<hr class="styled-hr">
+		<p class="home-page-text" style="text-decoration: underline; margin-bottom:0px; padding-bottom:10px;">
+			Why you should join a club?
+			<!-- add 4 images inline -->
+		</p>
+		<div class="reasons-to-join">
+			<div class="reason-widget">
+				<img src="images/meet-people.png" alt="Image: meeting new people" width="200" height="200">
+				<p>Meet new people and grow your network</p>
+			</div>
+			<div class="reason-widget">
+				<img src="images/hobbies.png" alt="Image: develop a new interest, hobby, or skill" width="200" height="200">
+				<p>Develop a new interest, hobby, or skill</p>
+			</div>
+			<div class="reason-widget">
+				<img src="images/volunteer.png" alt="Image: volunteering opportunties" width="200" height="200">
+				<p>Volunteering opportunties</p>
+			</div>
+			<div class="reason-widget">
+				<img src="images/fun-break3.png" alt="Image: take a fun break from studies" width="200" height="200">
+				<p>Take a fun break from your studies</p>
+			</div>
+		</div>
+	</div>
+
+	<hr class="styled-hr">
+
+	<div class="container">
+		<div class="column">
+			<h2>Upcoming Events</h2>
+			<div class="event_widget">
+				<div class="date_widget">16th Jun 2023</div>
+				<p class="title-widget">WISTEMS' Quiz Night</p>
+				<p>
+					Once upon a time 📖, on the mystical land of IW B18 ✨💫
+					WISTEMS host their magical🧙‍♀️Quiz Night on Friday 19th May,
+					and they humbly 😇 request the honour of your presence🧚‍♂.
+					You and your esteemed entourage👬👭are invited to participate
+					in a night of enchanting games 👸🫅, mystic rounds of questions🔮, and
+					the opportunity to dress💃🧝 in your most exceptional fairytale outfits.
+					Meals and drinks 🍕🍾🍻(both alcoholic and non) will be provided under
+					purchase of your ticket 💰🎫. Ticket are $20 per person, and sales open
+					9:00AM Wednesday 26th April. So set your reminders 🕰 to ensure you do not
+					miss out!
+				</p>
+			</div>
+			<button type="button" class="events-btn" onclick="navigateToEventsPage()">Click here to view all</button>
+
+		</div>
+
+		<div class="column">
+			<h2>Important Updates</h2>
+			<div class="event_widget">
+				<div class="club-widget">Club Logo</div>
+				<p class="title-widget">Robogals' Rural Trip</p>
+				<p>
+					📣 Rural Trip Applications Now Open 📣
+					Do you have some free time during the mid-year break? Are you interested in a free trip to the Wallaroo? Are you passionate about inspiring school students with STEM?
+					Robogals Adelaide is running our annual rural trip, and are looking for volunteers to attend! We will be visiting schools in the Wallaroo region, and delivering Robogals workshops to school children in regional areas.
+					This rural trip will take place from the 2nd-6th July. Workshops will run during the school day (9am-3pm), with free time for volunteers after this.
+					We are looking for passionate and enthusiastic volunteers to apply for this opportunity, and welcome applications from any degree! Applications close Friday 26th of May at midnight.
+				</p>
+			</div>
+			<button type="button" class="events-btn" onclick="navigateToUpdatesPage()">Click here to view all</button>
+		</div>
+	</div>
+</div>
+	<!-- Footer -->
+    <footer>
+		<div class="logo">
+			<img onclick="navigateToUniPage()"  src="images/UoA.jpg" alt="Header Image">
+		</div>
+        <div class="copyright">
+		    <p id="copyright">&copy; 2023 mySET clubs & societies. All rights reserved.</p>
+        </div>
+		<div class="contact">
+			<strong>Contact: AskSET</strong><br>
+			askset@adelaide.edu.au<br>
+			<strong>Open hours</strong><br>
+			10 am to 4 pm, Mon to Fri<br>
+			<strong>Location</strong>
+			Level 1, Ingkarni Wardli Building
+		</div>
+
+    </footer>
+
+	<!-- <script src="javascripts/script.js">
+	</script> -->
+	<script>
+		window.onload = function() {
+			let urlParams = new URLSearchParams(window.location.search);
+			let loggedIn = urlParams.get('loggedIn');
+
+			if (loggedIn) {
+				let loginBtn = document.getElementById('login-btn');
+				if (loginBtn) {
+					loginBtn.innerText = "Logout";
+					loginBtn.onclick = logout;
+				}
+				implementChangesToHome();
+				let eventsLink = document.getElementById('custom-events');
+				eventsLink.href = 'events.html?loggedIn=true';
+			}
+		};
+	</script>
+</body>
+</html>

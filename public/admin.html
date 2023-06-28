@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ADMIN</title>
+
+    <link rel="stylesheet" href="stylesheets/myprofile.css" />
+    <link rel="stylesheet" href="stylesheets/style-website.css" />
+    <link rel="stylesheet" href="stylesheets/header.css" />
+    <link rel="stylesheet" href="stylesheets/footer.css" />
+    <link rel="stylesheet" href="stylesheets/all-clubs.css" />
+    <!-- <script src="javascripts/all-clubs.js"</script></script> -->
+    <script src="javascripts/script.js" defer></script>
+    <script src="javascripts/login.js" defer></script>
+    <script src="javascripts/admin-profile.js" defer></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/black-logo.png" alt="mySET logo"></a>
+        </div>
+
+
+        <div class="nav-bar">
+            <!-- <a href="index.html">HOME</a>
+            <a href="all-clubs.html">CLUBS</a>
+            <a href="events.html">EVENTS</a>
+            <a href="updates.html">UPDATES</a>
+            <a href="contact.html">CONTACT</a> -->
+
+        </div>
+
+        <div class="login">
+            <!-- <button type="button" class="login-btn">Login/Sign Up</button> -->
+            <button type="button" class="login-btn" id="login-btn" onclick="logout()">Logout</button>
+        </div>
+    </header>
+
+    <!-- Background image section -->
+    <div class="bg-img">
+        <p class="text_upon_img" id="page-specific-title-style">
+            <span id="first-text" style="font-size: 3.5rem;">ADMIN PAGE</span>
+            <br>
+            View account details and manage mySET as admin
+        </p>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-div">
+        Where you are at:
+        <a href="index.html" class="breadcrumb"> Home</a> / ADMIN
+    </div>
+
+    <!-- Navigation column -->
+    <nav class="nav-column">
+        <button type="button" class="side" onclick="navigateToHomePage()">HOME</button>
+        <button type="button" class="side" onclick="navigateToAllclubsPage()">CLUBS</button>
+        <button type="button" class="side" onclick="navigateToEventsPage()">EVENTS</button>
+        <button type="button" class="side" onclick="navigateToUpdatesPage()">UPDATES</button>
+        <button type="button" class="side" onclick="navigateToMyprofilePage()"
+            style="background-color:#FCA311; color:black; ">
+            <strong>ADMIN PROFILE</strong></button>
+        <button type="button" class="side" onclick="navigateToContactPage()">CONTACT</button>
+        <!-- <button type="button" class="side">JOIN A CLUB</button> -->
+        <!-- <button type="button" class="side">MY PROFILE</button> -->
+    </nav>
+
+    <br>
+
+    <!-- <h2></h2> -->
+    <!-- <div id="grid-container"></div> -->
+    <!-- this above line of code would be used for dynamic code; but right now JS isn't working due to some eslint error.-->
+    <div class="profile-container">
+        <!-- <hr> -->
+        <div class="user-details">
+            <h3>Personal Details</h3>
+            <div>
+                USERNAME: <div id="username-placeholder">your username here</div> <br>
+                NAME: <div id="name-placeholder">(your name here)</div> <br>
+                ID: <div id="id-placeholder">(your id here)</div> <br>
+                EMAIL: <div id="email-placeholder">(your email here)</div> <br>
+                ADDRESS: <div id="address-placeholder">(your address here)</div><br>
+            </div>
+
+            <!-- <p>Click here to view Updates</p>
+            <button type="button" class="updates-button-myprofile" onclick="navigateToUpdatesPage()">UPDATES!</button> -->
+
+        </div>
+        <div class="user-photo">
+            <div class="image-placeholder">Your Photo Here
+            </div>
+            <input type="file" class="photo-upload" onchange="handlePhotoUpload(event)" accept="image/*">
+        </div>
+        <hr>
+    </div>
+
+    <div class="manage-clubs-container">
+        <!-- <hr> -->
+        <div class="user-details">
+            <h3>MANAGE CLUBS</h3>
+            <div class="manage-grid-container">
+
+                <div class="item">
+                    <div class="club">
+                        <a href="#">
+                            <img src="images/club1.png" alt="Club 1">
+                            <h3>Club 1</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="club">
+                        <a href="#">
+                            <img src="images/club2.png" alt="Club 2">
+                            <h3>Club 2</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="club">
+                        <a href="#">
+                            <img src="images/club3.png" alt="Club 3">
+                            <h3>Club 3</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+                <div class="item">Item 6</div>
+                <div class="item">Item 7</div>
+                <div class="item">Item 8</div>
+                <div class="item">Item 9</div>
+            </div>
+        </div>
+        <div class="user-photo">
+            <h3>MANAGE USERS</h3>
+            <div>
+                <button type="button" class="admin-buttons" >VIEW ALL MEMBERS/USERS</button>
+                <button type="button" class="admin-buttons" >VIEW ALL CLUBS</button>
+                <button type="button" class="admin-buttons" >VIEW ALL CLUB MANAGERS</button>
+                <button type="button" class="admin-buttons" >ADD NEW ADMIN</button>
+                <button type="button" class="admin-buttons" >ADD NEW CLUB</button>
+                <!-- <button type="button" class="admin-buttons" >USER ANALYTICS</button> -->
+                <!-- <button type="button" class="admin-buttons" >VIEW ALL ADMINS</button> -->
+            </div>
+        </div>
+        <hr>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo">
+            <img onclick="navigateToUniPage()" src="images/UoA.jpg" alt="Header Image">
+        </div>
+        <div class="copyright">
+            <p id="copyright">&copy; 2023 mySET clubs & societies. All rights reserved.</p>
+        </div>
+        <div class="contact">
+            <strong>Contact: AskSET</strong><br>
+            askset@adelaide.edu.au<br>
+            <strong>Open hours</strong><br>
+            10 am to 4 pm, Mon to Fri<br>
+            <strong>Location</strong>
+            Level 1, Ingkarni Wardli Building
+        </div>
+
+    </footer>
+
+    <script>
+		window.onload = function() {
+			let urlParams = new URLSearchParams(window.location.search);
+			let loggedIn = urlParams.get('loggedIn');
+
+			if (loggedIn) {
+				implementChangesOnPage();
+			}
+		};
+	</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+.description-container {
+    /* display: flex; */
+    justify-content: space-between;
+    border: 1px solid black;
+    /* margin-right: 1%; */
+    /* max-width: 90%; */
+    margin-left: 3%;
+    margin-right: 3%;
+
+    align-items: center;
+}
+
+.description-container h3 {
+    color: darkblue;
+    text-align: center;
+}
+
+.view-your-clubs {
+    font-size: 30px;
+    color: darkblue;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 3%;
+    max-width: 75%;
+    /* Adjust the value as per your preference */
+}
+
+.user-details {
+    flex: 1;
+    align-self: flex-start;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-photo {
+    flex: 1;
+    align-self: flex-start;
+    /* border: 1px solid black; */
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.image-placeholder {
+    width: 50%;
+    height: 0;
+    padding-bottom: 66.67%;
+    /* 3:4 ratio (4 / 3 * 100) */
+    background-color: lightgray;
+}
+
+.myprofile-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-left: auto;
+    margin-right: 3%;
+    max-width: 75%;
+    /* Adjust the value as per your preference */
+    margin-bottom: 5%;
+}
+
+.item {
+    background-color: #eaeaea;
+    padding: 20px;
+}
+
+.updates-button-myprofile {
+    width: 120px;
+    background-color: darkred;
+    color: #ffffff;
+}
+
+.user-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-placeholder {
+    width: 300px; /* Adjust the width as per your preference */
+    height: 0px; /* Adjust the height as per your preference */
+    background-color: lightgray;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .photo-upload {
+    margin-top: 10px; /* Adjust the margin as per your preference */
+  }
+
+/* Manage clubs */
+.manage-clubs-container {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: 3%;
+    align-items: center;
+}
+.manage-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    /* margin-left: ; */
+    margin-right: 5%;
+    /* max-width: 75%; */
+    /* Adjust the value as per your preference */
+    margin-bottom: 5%;
+}
+
+.manage-clubs-container h3{
+    color: darkblue;
+    text-align: center;
+}
+
+.admin-buttons{
+    font-size: 20px;
+    width: 400px;
+    height: 50px;
+    background-color: darkred;
+    color: #ffffff;
+}
