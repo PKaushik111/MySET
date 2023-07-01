@@ -49,6 +49,7 @@ To install and run the web app project on your local machine, please follow thes
 - CSS
 - JavaScript
 - Vue.js
+- MYSQL
 
 ## Authors
 
